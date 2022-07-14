@@ -1,0 +1,10 @@
+title Entering the SPA site
+
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/notes.css
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server->browser: POST HTML,CSS,JS and Json data
+note over browser: 
+Browser renders HTMl code and formats the JSON data.
+end note
