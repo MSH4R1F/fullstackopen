@@ -1,0 +1,28 @@
+title Submitting a note
+
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/notes.css
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server->browser: POST HTML,CSS,JS 
+note over browser: 
+Browser renders HTMl code and requests the JSON data.
+end note
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server->browser: POST JSON data
+note over browser:
+browser renders the notes to display.
+end note
+
+note over browser:
+User inputs note and submits
+end note:
+browser->server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over browser:
+Renders new note 
+end note
+
+
+Link: https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgU3VibWl0dGluZyBhIG5vdGUKCmJyb3dzZXItPnNlcnZlcjogR0VUIGh0dHBzOi8vc3R1ZGllcy5jcy5oZWxzaW5raS5maS9leGFtcGxlYXBwL25vdGVzAAFEcy5jcwADRgCBE0BkYXRhLmpzb24KAIINBi0-AIIdBzogUE9TVCBIVE1MLENTUyxKUyAKbm90ZSBvdmVyIAAcCQpCAIJNBiByZW5kZXJzIEhUTWwgY29kZSBhbmQgcmVxdWVzdHMgdGhlIEpTT04gAGwFCmVuZACDDQYAYF8AagkAgSkTAIQGCACBMgl0aGUAhCMFcyB0byBkaXNwbGF5AIEgCwAvFFVzZXIgaW5wdXRzAIReBQCBcAVzAIR0BXMAgVwJAGEJAIRuCgCCVwUAhE4rZXdfbm90ZV9zcACBNRVSAIJ2B25ldwCBAQYAgSsLCg&s=default
+
+

@@ -1,0 +1,16 @@
+title Entering the SPA site
+
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/notes.css
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server->browser: POST HTML,CSS,JS 
+note over browser: 
+Browser renders HTMl code and requests the JSON data.
+end note
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server->browser: POST JSON data
+note over browser:
+browser renders the notes to display.
+end note
+https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgRW50ZXJpbmcgdGhlIFNQQSBzaXRlCgpicm93c2VyLT5zZXJ2ZXI6IEdFVCBodHRwczovL3N0dWRpZXMuY3MuaGVsc2lua2kuZmkvZXhhbXBsZWFwcC9ub3RlcwABRHMuY3MAA0YAgRNAZGF0YS5qc29uCgCCDQYtPgCCHQc6IFBPU1QgSFRNTCxDU1MsSlMgCm5vdGUgb3ZlciAAHAkKQgCCTQYgcmVuZGVycyBIVE1sIGNvZGUgYW5kIHJlcXVlc3RzAIMDBUpTT04gAGwFCmVuZCBub3RlAF9gAGoJAIEpEwCEBggAgTIJdGhlAIEQBXMgdG8gZGlzcGxheQCBIAsKCg&s=default
